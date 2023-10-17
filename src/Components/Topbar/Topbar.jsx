@@ -34,7 +34,7 @@ export default function Topbar() {
         <div class="top-bar__left">
           <div class="top-bar__email">
             <a href="#" class="top-bar__email-text top-bar__link">
-              sabzlearn@gmail.com
+              c.5x@yahoo.com
             </a>
             <i class="fas fa-envelope top-bar__email-icon"></i>
           </div>

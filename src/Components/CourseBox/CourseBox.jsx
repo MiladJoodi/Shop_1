@@ -6,7 +6,7 @@ export default function CourseBox() {
     <div class="col-4">
     <div class="course-box">
       <a href="#">
-        <img src="images/courses/fareelancer.png" alt="Course img" class="course-box__img" />
+        <img src="/images/courses/fareelancer.png" alt="Course img" class="course-box__img" />
       </a>
       <div class="course-box__main">
         <a href="#" class="course-box__title">دوره پروژه محور متخصص جنگو</a>
@@ -17,11 +17,11 @@ export default function CourseBox() {
             <a href="#" class="course-box__teacher-link">رضا دولتی</a>
           </div>
           <div class="course-box__rating">
-            <img src="images/svgs/star.svg" alt="rating" class="course-box__star" />
-            <img src="images/svgs/star_fill.svg" alt="rating" class="course-box__star" />
-            <img src="images/svgs/star_fill.svg" alt="rating" class="course-box__star" />
-            <img src="images/svgs/star_fill.svg" alt="rating" class="course-box__star" />
-            <img src="images/svgs/star_fill.svg" alt="rating" class="course-box__star" />
+            <img src="/images/svgs/star.svg" alt="rating" class="course-box__star" />
+            <img src="/images/svgs/star_fill.svg" alt="rating" class="course-box__star" />
+            <img src="/images/svgs/star_fill.svg" alt="rating" class="course-box__star" />
+            <img src="/images/svgs/star_fill.svg" alt="rating" class="course-box__star" />
+            <img src="/images/svgs/star_fill.svg" alt="rating" class="course-box__star" />
           </div>
         </div>
 
