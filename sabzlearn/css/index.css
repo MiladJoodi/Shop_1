@@ -1,0 +1,282 @@
+@import "./variables.css";
+@import "./fonts.css";
+@import './top-bar.css';
+@import "./navbar.css";
+@import "./defaults.css";
+@import "./footer.css";
+@import "./course-box.css";
+@import "./helpers.css";
+
+/* Start landing Styles */
+
+.landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background_landing.jfif) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 9rem 0;
+  color: var(--white-color);
+}
+
+.landing__title {
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+.landing__subtitle {
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+}
+
+.landing__searchbar {
+  width: 700px;
+  position: relative;
+  margin: 3.5rem auto;
+}
+
+.landing__searchbar-input {
+  width: 100%;
+  padding: 2.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.landing__searchbar-btn {
+  border: none;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 1rem;
+  width: 6rem;
+  top: 0.7rem;
+  height: 6rem;
+  border-radius: 1rem;
+}
+
+.landing__searchbar-icon {
+  font-size: 2.8rem;
+  color: var(--white-color);
+}
+
+.landing-status {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.landing-status__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-status__item svg {
+  fill: var(--white-color);
+}
+
+.landing-status__count {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+.landing-status__text {
+  font-weight: bold;
+}
+
+/* Finish landing Styles */
+
+/* Start Lateset Courses Styles */
+
+.courses {
+  margin: 4rem 0;
+}
+
+.courses-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courses-header__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.courses-header__text {
+  color: #9c9c9c;
+  font-size: 1.5rem;
+}
+
+.courses-header__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.courses-header__link:hover {
+  color: var(--white-color);
+}
+
+.courses-header__icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* Finish Lateset Courses Styles */
+
+/* Start About Us Styles */
+
+.about-us {
+  margin: 6rem 0;
+}
+
+.about-us__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us__subtitle {
+  color: #9c9c9c;
+  font-size: 1.5rem;
+}
+
+.about-us__box {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  padding: 2rem 1.5rem;
+}
+
+.about-us__icon {
+  color: #666;
+  font-size: 6.5rem;
+}
+
+.about-us__box-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.about-us__box-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* Finish About Us Styles */
+
+
+/* Start Popular Courses Styles */
+.popular, .presell {
+  margin: 5rem 0;
+}
+
+.popular__slider .course-box, .presell__slider .course-box {
+  margin: 0 1.3rem;
+  box-shadow: 0 0 10px rgba(168, 172, 185, 0.3);
+}
+
+.popular__slider .course-box:hover, .presell__slider .course-box {
+  transform: none;
+}
+
+.presell__slider, .popular__slider {
+  margin: 4rem 0;
+  position: relative;
+}
+
+/* Finish Popular Courses Styles */
+
+/* Start Articles Styles */
+
+
+.articles {
+  margin: 4rem 0;
+}
+
+.articles-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articles-header__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.articles-header__text {
+  color: #9c9c9c;
+  font-size: 1.5rem;
+}
+
+.articles-header__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.articles-header__link:hover {
+  color: var(--white-color);
+}
+
+.articles-header__icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.article-card {
+  margin: 3rem 0;
+  transition: all 400ms ease;
+  border-radius: 1rem;
+  box-shadow: 0 5px 30px rgba(70, 72, 77, 0.08);
+}
+
+.article-card:hover {
+  transform: translateY(-0.6rem);
+}
+
+.article-card__img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.article-card__content {
+  padding: 1rem 2rem 3rem 2rem;
+}
+
+.article-card__link {
+  font-weight: bold;
+}
+
+.article-card__text {
+  color: #898989;
+  font-size: 1.2rem;
+  padding: 1rem 0 2.5rem 0;
+}
+
+.article-card__btn {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 400ms ease;
+}
+
+.article-card__btn:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+/* Finish Articles Styles */

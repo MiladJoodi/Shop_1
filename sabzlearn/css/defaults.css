@@ -1,0 +1,36 @@
+/* Start Default Styles */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  direction: rtl;
+}
+
+*,
+*::after,
+*::before {
+  outline: none;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: all 400ms ease;
+}
+
+a:hover {
+  color: #1e83f0;
+}
+
+i {
+  user-select: none;
+}
+
+/* Finish Default Styles */

@@ -1,0 +1,17 @@
+.popular, .presell {
+    margin: 5rem 0;
+  }
+  
+  .popular__slider .course-box, .presell__slider .course-box {
+    margin: 0 1.3rem;
+    box-shadow: 0 0 10px rgba(168, 172, 185, 0.3);
+  }
+  
+  .popular__slider .course-box:hover, .presell__slider .course-box {
+    transform: none;
+  }
+  
+  .presell__slider, .popular__slider {
+    margin: 4rem 0;
+    position: relative;
+  }
