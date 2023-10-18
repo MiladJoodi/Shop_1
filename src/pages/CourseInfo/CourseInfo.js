@@ -212,7 +212,7 @@ export default function CourseInfo() {
                   <div class="introduction__topic">
                     <Accordion defaultActiveKey="0">
                       <Accordion.Item className="accordion" eventKey="0">
-                        <Accordion.Header>Accordion Item #1</Accordion.Header>
+                        <Accordion.Header>معرفی دوره</Accordion.Header>
                         <Accordion.Body>
                         <div class="accordion-body introduction__accordion-body">
                             <div class="introduction__accordion-right">
@@ -233,7 +233,7 @@ export default function CourseInfo() {
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item className="accordion" eventKey="1">
-                        <Accordion.Header>Accordion Item #2</Accordion.Header>
+                        <Accordion.Header>اصطلاحات ضروری</Accordion.Header>
                         <Accordion.Body>
                         <div class="accordion-body introduction__accordion-body">
                             <div class="introduction__accordion-right">
@@ -242,7 +242,7 @@ export default function CourseInfo() {
                               </span>
                               <i class="fab fa-youtube introduction__accordion-icon"></i>
                               <a href="#" class="introduction__accordion-link">
-                                معرفی دوره + چرا یادگیری کتابخانه ها ضروری است؟
+                                معرفی دوره + چرا اصطلاحات بک اند ضروری است؟
                               </a>
                             </div>
                             <div class="introduction__accordion-left">
@@ -252,126 +252,45 @@ export default function CourseInfo() {
                             </div>
                           </div>
                         </Accordion.Body>
+                        <Accordion.Body>
+                        <div class="accordion-body introduction__accordion-body">
+                            <div class="introduction__accordion-right">
+                              <span class="introduction__accordion-count">
+                                1
+                              </span>
+                              <i class="fab fa-youtube introduction__accordion-icon"></i>
+                              <a href="#" class="introduction__accordion-link">
+                                جلسه دوم
+                              </a>
+                            </div>
+                            <div class="introduction__accordion-left">
+                              <span class="introduction__accordion-time">
+                                18:34
+                              </span>
+                            </div>
+                          </div>
+                        </Accordion.Body>
+                        <Accordion.Body>
+                        <div class="accordion-body introduction__accordion-body">
+                            <div class="introduction__accordion-right">
+                              <span class="introduction__accordion-count">
+                                1
+                              </span>
+                              <i class="fab fa-youtube introduction__accordion-icon"></i>
+                              <a href="#" class="introduction__accordion-link">
+                                جلسه سوم
+                              </a>
+                            </div>
+                            <div class="introduction__accordion-left">
+                              <span class="introduction__accordion-time">
+                                11:34
+                              </span>
+                            </div>
+                          </div>
+                        </Accordion.Body>
                       </Accordion.Item>
                     </Accordion>
 
-                    <div class="accordion" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                          <button
-                            class="accordion-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne"
-                            aria-expanded="true"
-                            aria-controls="collapseOne"
-                          >
-                            معرفی دوره
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseOne"
-                          class="accordion-collapse collapse show"
-                          aria-labelledby="headingOne"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion-body introduction__accordion-body">
-                            <div class="introduction__accordion-right">
-                              <span class="introduction__accordion-count">
-                                1
-                              </span>
-                              <i class="fab fa-youtube introduction__accordion-icon"></i>
-                              <a href="#" class="introduction__accordion-link">
-                                معرفی دوره + چرا یادگیری کتابخانه ها ضروری است؟
-                              </a>
-                            </div>
-                            <div class="introduction__accordion-left">
-                              <span class="introduction__accordion-time">
-                                18:34
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion" id="accordionExample2">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                          <button
-                            class="accordion-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo"
-                            aria-expanded="true"
-                            aria-controls="collapseTwo"
-                          >
-                            معرفی دوره
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseTwo"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingTwo"
-                          data-bs-parent="#accordionExample2"
-                        >
-                          <div class="accordion-body introduction__accordion-body">
-                            <div class="introduction__accordion-right">
-                              <span class="introduction__accordion-count">
-                                1
-                              </span>
-                              <i class="fab fa-youtube introduction__accordion-icon"></i>
-                              <a href="#" class="introduction__accordion-link">
-                                معرفی دوره + چرا یادگیری کتابخانه ها ضروری است؟
-                              </a>
-                            </div>
-                            <div class="introduction__accordion-left">
-                              <span class="introduction__accordion-time">
-                                18:34
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion" id="accordionExample3">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                          <button
-                            class="accordion-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree"
-                            aria-expanded="true"
-                            aria-controls="collapseThree"
-                          >
-                            معرفی دوره
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingThree"
-                          data-bs-parent="#accordionExample3"
-                        >
-                          <div class="accordion-body introduction__accordion-body">
-                            <div class="introduction__accordion-right">
-                              <span class="introduction__accordion-count">
-                                1
-                              </span>
-                              <i class="fab fa-youtube introduction__accordion-icon"></i>
-                              <a href="#" class="introduction__accordion-link">
-                                معرفی دوره + چرا یادگیری کتابخانه ها ضروری است؟
-                              </a>
-                            </div>
-                            <div class="introduction__accordion-left">
-                              <span class="introduction__accordion-time">
-                                18:34
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
                 {/*  end introduction */}
