@@ -5,6 +5,8 @@ import Navbar from "./../../Components/Navbar/Navbar";
 import Footer from "./../../Components/Footer/Footer";
 import Breadcrumb from "./../../Components/Breadcrumb/Breadcrumb";
 import CourseDetailBox from "./../../Components/CourseDetailBox/CourseDetailBox";
+import CommentTextArea from "./../../Components/CommentTextArea/CommentTextArea";
+import Accordion from "react-bootstrap/Accordion";
 
 export default function CourseInfo() {
   return (
@@ -208,6 +210,51 @@ export default function CourseInfo() {
                   </div>
 
                   <div class="introduction__topic">
+                    <Accordion defaultActiveKey="0">
+                      <Accordion.Item className="accordion" eventKey="0">
+                        <Accordion.Header>Accordion Item #1</Accordion.Header>
+                        <Accordion.Body>
+                        <div class="accordion-body introduction__accordion-body">
+                            <div class="introduction__accordion-right">
+                              <span class="introduction__accordion-count">
+                                1
+                              </span>
+                              <i class="fab fa-youtube introduction__accordion-icon"></i>
+                              <a href="#" class="introduction__accordion-link">
+                                معرفی دوره + چرا یادگیری کتابخانه ها ضروری است؟
+                              </a>
+                            </div>
+                            <div class="introduction__accordion-left">
+                              <span class="introduction__accordion-time">
+                                18:34
+                              </span>
+                            </div>
+                          </div>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      <Accordion.Item className="accordion" eventKey="1">
+                        <Accordion.Header>Accordion Item #2</Accordion.Header>
+                        <Accordion.Body>
+                        <div class="accordion-body introduction__accordion-body">
+                            <div class="introduction__accordion-right">
+                              <span class="introduction__accordion-count">
+                                1
+                              </span>
+                              <i class="fab fa-youtube introduction__accordion-icon"></i>
+                              <a href="#" class="introduction__accordion-link">
+                                معرفی دوره + چرا یادگیری کتابخانه ها ضروری است؟
+                              </a>
+                            </div>
+                            <div class="introduction__accordion-left">
+                              <span class="introduction__accordion-time">
+                                18:34
+                              </span>
+                            </div>
+                          </div>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+
                     <div class="accordion" id="accordionExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -358,6 +405,8 @@ export default function CourseInfo() {
                   </p>
                 </div>
                 {/* Finish Teacher Details */}
+
+                <CommentTextArea />
               </div>
             </div>
 
@@ -411,7 +460,7 @@ export default function CourseInfo() {
                   <span class="course-info__topic-title">سرفصل های دوره</span>
                   <span class="course-info__topic-text">
                     برای مشاهده و یا دانلود دوره روی کلمه
-                    <a href="#" style={{color: 'blue', fontWeight: 'bold'}}>
+                    <a href="#" style={{ color: "blue", fontWeight: "bold" }}>
                       لینک
                     </a>
                     کلیک کنید

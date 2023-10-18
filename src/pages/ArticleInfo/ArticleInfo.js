@@ -4,6 +4,7 @@ import Topbar from "./../../Components/Topbar/Topbar";
 import Navbar from "./../../Components/Navbar/Navbar";
 import Footer from "./../../Components/Footer/Footer";
 import Breadcrumb from "./../../Components/Breadcrumb/Breadcrumb";
+import CommentTextArea from "../../Components/CommentTextArea/CommentTextArea";
 
 export default function ArticleInfo() {
   return (
@@ -197,7 +198,6 @@ export default function ArticleInfo() {
                   />
                 </div>
 
-                
                 <div class="article-social-media">
                   <span class="article-social-media__text">اشتراک گذاری :</span>
                   <a href="#" class="article-social-media__link">
@@ -211,6 +211,35 @@ export default function ArticleInfo() {
                   </a>
                 </div>
               </div>
+
+              <div class="suggestion-articles">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="suggestion-articles__right suggestion-articles__content">
+                      <a href="#" class="suggestion-articles__icon-link">
+                        <i class="fas fa-arrow-right suggestion-articles__icon"></i>
+                      </a>
+                      <a href="#" class="suggestion-articles__link">
+                        سریع ترین و بهترین راه یادگیری جاوا اسکریپت چیست؟ | تجربه برنامه نویسان
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="suggestion-articles__left suggestion-articles__content">
+                      <a href="#" class="suggestion-articles__icon-link">
+                        <i class="fas fa-arrow-left suggestion-articles__icon"></i>
+                      </a>
+                      <a href="#" class="suggestion-articles__link">
+                        سریع ترین و بهترین راه یادگیری جاوا اسکریپت چیست؟ | تجربه برنامه نویسان
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <CommentTextArea />
+
+              
             </div>
             {/* start col 8 */}
 
