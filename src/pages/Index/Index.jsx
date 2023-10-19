@@ -11,6 +11,7 @@ import Footer from '../../Components/Footer/Footer'
 export default function Index() {
   return (
     <>
+    
     <Header />
     <LastCourses />
     <AboutUs />
