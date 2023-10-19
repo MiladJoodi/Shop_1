@@ -1,0 +1,152 @@
+/* ============================== Login-Register Style ============================== */
+.login-register {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.login-register::before {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  width: 150%;
+  height: 380px;
+  background-color: #2bce56;
+  z-index: -1;
+  transform: rotate(-4deg);
+}
+.login-register::after {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 380px;
+  background-color: rgb(43, 206, 86, 0.6);
+  z-index: -9999;
+  transform: rotate(-4deg);
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+  padding: 2.5rem 2rem 5rem 2rem;
+  background-color: var(--white-color);
+  box-shadow: 0 6px 20px rgba(168, 172, 185, 0.3);
+  border-radius: 5px;
+  width: 50rem;
+  border-bottom: 5px solid #2bce56;
+}
+.login__title {
+  display: block;
+  color: #7b868a;
+  font-size: 2.2rem;
+}
+.login__subtitle {
+  display: block;
+  color: #7b868a;
+  font-size: 1.5rem;
+}
+.login__new-member {
+  background-color: #f0f2f7;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.login__new-member-text {
+  color: #7b868a;
+  font-size: 1.4rem;
+}
+.login__new-member-link {
+  background-color: #a8aaaf;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+}
+.login__new-member-link:hover {
+  color: var(--white-color);
+}
+.login-form {
+  width: 100%;
+}
+.login-form__username,
+.login-form__password {
+  position: relative;
+}
+.login-form__username-input,
+.login-form__password-input {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+  margin: 0.8rem 0;
+  border-radius: 3px;
+  font-size: 1.4rem;
+}
+.login-form__username-icon,
+.login-form__password-icon {
+  position: absolute;
+  left: 1.5rem;
+  top: 2rem;
+  font-size: 2.2rem;
+  color: #ccc;
+}
+.login-form__btn {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 1.2rem 0;
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  background-color: #2bce56;
+  position: relative;
+}
+.login-form__btn-icon {
+  color: var(--white-color);
+  font-size: 1.8rem;
+  position: absolute;
+  right: 1rem;
+}
+.login-form__btn-text {
+  color: var(--white-color);
+  margin: 0 auto;
+}
+.login-form__password-setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.login-form__password-remember {
+  display: flex;
+  align-items: center;
+}
+.login-form__password-checkbox {
+  margin-left: 1rem;
+}
+.login-form__password-text {
+  color: #6c757d;
+  font-size: 1.4rem;
+}
+.login-form__password-forget-link {
+  color: #6c757d;
+  font-size: 1.4rem;
+}
+.login__des {
+  margin-top: 3rem;
+  color: #7b868a;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.login__des-list {
+  list-style-type: disc;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+/* ============================== Login-Register Style ============================== */
