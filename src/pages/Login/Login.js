@@ -5,6 +5,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Topbar from "../../Components/Topbar/Topbar";
 
 import "./Login.css";
+import Input from "../../Components/Form/Input";
 
 export default function Login() {
   return (
@@ -26,19 +27,33 @@ export default function Login() {
           </div>
           <form action="#" class="login-form">
             <div class="login-form__username">
-              <input
+
+            <Input
+                className="login-form__username-input"
+                type='text'
+                placeholder="نام کاربری یا آدرس ایمیل"
+                element='input'
+                />
+
+              {/* <input
                 class="login-form__username-input"
                 type="text"
                 placeholder="نام کاربری یا آدرس ایمیل"
-              />
+              /> */}
               <i class="login-form__username-icon fa fa-user"></i>
             </div>
             <div class="login-form__password">
-              <input
+            <Input
+                className="login-form__password-input"
+                type='password'
+                placeholder="رمز عبور"
+                element='input'
+                />
+              {/* <input
                 class="login-form__password-input"
                 type="text"
                 placeholder="رمز عبور"
-              />
+              /> */}
               <i class="login-form__password-icon fa fa-lock-open"></i>
             </div>
             <button class="login-form__btn" type="submit">

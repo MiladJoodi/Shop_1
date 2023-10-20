@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import Topbar from "../../Components/Topbar/Topbar";
+import Input from "../../Components/Form/Input";
+
 
 import "./Register.css";
 
@@ -24,27 +26,35 @@ export default function Register() {
           </div>
           <form action="#" class="login-form">
             <div class="login-form__username">
-              <input
+            <Input
+                className="login-form__username-input"
+                type='text'
+                placeholder="نام کاربری"
+                element='input'
+                />
+              {/* <input
                 class="login-form__username-input"
                 type="text"
                 placeholder="نام کاربری"
-              />
+              /> */}
               <i class="login-form__username-icon fa fa-user"></i>
             </div>
             <div class="login-form__password">
-              <input
-                class="login-form__password-input"
-                type="text"
+              <Input
+                className="login-form__password-input"
+                type='text'
                 placeholder="آدرس ایمیل"
-              />
+                element='input'
+                />
               <i class="login-form__password-icon fa fa-envelope"></i>
             </div>
             <div class="login-form__password">
-              <input
-                class="login-form__password-input"
-                type="text"
+            <Input
+                className="login-form__password-input"
+                type='password'
                 placeholder="رمز عبور"
-              />
+                element='input'
+                />
               <i class="login-form__password-icon fa fa-lock-open"></i>
             </div>
             <button class="login-form__btn" type="submit">
