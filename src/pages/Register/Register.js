@@ -4,11 +4,18 @@ import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import Topbar from "../../Components/Topbar/Topbar";
 import Input from "../../Components/Form/Input";
+import Button from "../../Components/Form/Button";
 
 
 import "./Register.css";
 
 export default function Register() {
+
+  const registerNewUser = (event)=>{
+    event.preventDefault()
+    console.log('user Registered');
+  }
+
   return (
     <>
       <Topbar />
@@ -52,10 +59,15 @@ export default function Register() {
             />
               <i class="login-form__password-icon fa fa-lock-open"></i>
             </div>
-            <button class="login-form__btn" type="submit">
+            <Button
+            type="submit"
+            onClick={registerNewUser}
+            className="login-form__btn"
+            disabled = {false}
+            >
               <i class="login-form__btn-icon fa fa-user-plus"></i>
               <span class="login-form__btn-text">عضویت</span>
-            </button>
+          </Button>
           </form>
           <div class="login__des">
             <span class="login__des-title">سلام کاربر محترم:</span>

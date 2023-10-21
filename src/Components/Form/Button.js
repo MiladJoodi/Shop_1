@@ -22,6 +22,17 @@ export default function Button(props) {
              {props.children}
             </a>
         )
+    }else{
+        return (
+            <button
+            className={props.className}
+            type={props.type}
+            onClick={props.onClick}
+            disabled= {props.disabled}
+            >
+                {props.children}
+            </button>
+        )
     }
 
   return (
