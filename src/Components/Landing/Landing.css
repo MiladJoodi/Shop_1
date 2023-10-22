@@ -1,6 +1,8 @@
+/* Start landing Styles */
+
 .landing {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./background_landing.jfif) no-repeat center center;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../public/images/background_landing.jfif") no-repeat center center; */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(background_landing.jfif) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -73,3 +75,5 @@
 .landing-status__text {
   font-weight: bold;
 }
+
+/* Finish landing Styles */

@@ -1,9 +1,7 @@
-.success{
+.success {
     border: 2px solid var(--primary-color) !important;
-    border-radius: 10px;
 }
 
-.error{
+.error {
     border: 2px solid red !important;
-    border-radius: 10px;
 }
