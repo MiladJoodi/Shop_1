@@ -5,12 +5,26 @@ import Button from "../../Components/Form/Button";
 import Input from "../../Components/Form/Input";
 import Navbar from "../../Components/Navbar/Navbar";
 import Topbar from "../../Components/Topbar/Topbar";
+import { useForm } from "../../hooks/useForm";
+
+
+import {
+  requiredValidator,
+  minValidator,
+  maxValidator,
+  emailValidator,
+} from "../../validators/rules";
+
 
 import "./Register.css";
+import { useForm } from "../../hooks/useForm";
 
 export default function Register() {
 
   const registerNewUser = (event) => {
+
+    const [] = useForm({ } , false)
+
     event.preventDefault()
     console.log('User Register');
   }
@@ -37,6 +51,7 @@ export default function Register() {
                 placeholder="نام کاربری"
                 className="login-form__username-input"
                 element="input"
+                id="username"
               />
               <i className="login-form__username-icon fa fa-user"></i>
             </div>
@@ -46,6 +61,7 @@ export default function Register() {
                 placeholder="آدرس ایمیل"
                 className="login-form__username-input"
                 element="input"
+                id="email"
               />
               <i className="login-form__password-icon fa fa-envelope"></i>
             </div>
@@ -55,6 +71,7 @@ export default function Register() {
                 placeholder="رمز عبور"
                 className="login-form__password-input"
                 element="input"
+                id="password"
               />
               <i className="login-form__password-icon fa fa-lock-open"></i>
             </div>

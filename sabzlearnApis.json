@@ -1,0 +1,506 @@
+{
+	"id": "2138de73-8016-2ff2-0063-729577c7175c",
+	"name": "Saeeidi Rad LMS",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Article",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"order": [
+				"6934ca2d-e47e-747b-0cb3-d7ea2f79ea21",
+				"1b7046e5-028b-e28a-18e1-d4aa16e50935",
+				"fe75aa7f-91ca-4d12-0e1c-05e2b5a5930b"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "89b153e4-7fd4-78a9-782a-5477a4b0eccc"
+		},
+		{
+			"id": "8620ae36-93b1-1214-15f6-9ca11ed5cc6c",
+			"name": "Authentication",
+			"description": "",
+			"order": [
+				"7471fb03-0ea8-becd-8b87-bcf4fbc3266b",
+				"7da605b0-1b3b-25a7-d4d8-e983a51d67ff",
+				"8be7816a-672a-b968-bbcf-50c2272e5f0c"
+			],
+			"folders_order": [],
+			"owner": 0,
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c"
+		},
+		{
+			"name": "Category",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"order": [
+				"36e87b7a-2dd1-54b1-1d53-470786697e11"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "a8271fa0-647a-2c25-6489-8094ec16b7a6"
+		},
+		{
+			"id": "6b9acd8f-fd31-1296-811f-86052fdd8aa9",
+			"name": "Course",
+			"description": "",
+			"order": [
+				"83118a2a-a1d6-ff3b-6f38-71d88953fa99",
+				"8801fd5d-f106-7fdd-309f-faf18916240c",
+				"b2f9f3e9-666e-8d30-5e67-abd6a5ed3652",
+				"7d4e8c2f-f342-ee2f-1159-221c1337534b",
+				"7c246394-d0e9-8ab0-cefd-1a88e90de6eb"
+			],
+			"folders_order": [],
+			"owner": 0,
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c"
+		},
+		{
+			"id": "fd99405f-c861-d7f5-a70c-b3c9b3ba9f53",
+			"name": "Menu",
+			"description": "",
+			"order": [
+				"bde7a3a1-cdd8-6de4-4bc3-c7c69ee376bf",
+				"b93d9d10-9e05-53a1-b6b0-10b5f420550f",
+				"74c35179-bb15-7d27-8931-bf23975296a2"
+			],
+			"folders_order": [],
+			"owner": 0,
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c"
+		}
+	],
+	"folders_order": [
+		"8620ae36-93b1-1214-15f6-9ca11ed5cc6c",
+		"6b9acd8f-fd31-1296-811f-86052fdd8aa9",
+		"fd99405f-c861-d7f5-a70c-b3c9b3ba9f53",
+		"a8271fa0-647a-2c25-6489-8094ec16b7a6",
+		"89b153e4-7fd4-78a9-782a-5477a4b0eccc"
+	],
+	"timestamp": 0,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1b7046e5-028b-e28a-18e1-d4aa16e50935",
+			"headers": "Authorization: user token\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "user token",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{baseUrl}}/articles",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"data": null,
+			"dataMode": "params",
+			"name": "All",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1665699396635,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "89b153e4-7fd4-78a9-782a-5477a4b0eccc"
+		},
+		{
+			"id": "36e87b7a-2dd1-54b1-1d53-470786697e11",
+			"headers": "Authorization: user token\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "user token",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{baseUrl}}/category",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1665698399971,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "a8271fa0-647a-2c25-6489-8094ec16b7a6",
+			"rawModeData": "{\n\t\"title\": \"{{$randomCategoryTitle}}\"\n}"
+		},
+		{
+			"id": "6934ca2d-e47e-747b-0cb3-d7ea2f79ea21",
+			"headers": "Content-Type: application/json\nAuthorization: admin token\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "admin token",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{baseUrl}}/articles",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1665699141819,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "89b153e4-7fd4-78a9-782a-5477a4b0eccc",
+			"rawModeData": "{\n\t\"title\": \"{{$randomTitle}}\",\n\t\"description\": \"{{$randomDescription}}\",\n\t\"body\": \"{{$randomBody}}\",\n\t\"shortName\": \"{{$randomShortName}}\",\n\t\"categoryID\": \"{{$randomCategoryID}}\",\n\t\"cover\": \"{{$fileUpload}}\"\n}"
+		},
+		{
+			"id": "7471fb03-0ea8-becd-8b87-bcf4fbc3266b",
+			"name": "Register",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"name\": \"{{$randomFullName}}\",\n    \"username\": \"{{$randomUserName}}\",\n    \"email\": \"{{$randomEmail}}\",\n    \"password\": \"123456\",\n    \"confirmPassword\": \"123456\" \n}",
+			"tests": "if(pm.response.code == 201) {\n    pm.collectionVariables.set('accessToken', pm.response.json().accessToken)\n}",
+			"preRequestScript": "",
+			"url": "{{baseUrl}}/auth/register",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "2138de73-8016-2ff2-0063-729577c7175c",
+			"folder": "8620ae36-93b1-1214-15f6-9ca11ed5cc6c"
+		},
+		{
+			"id": "74c35179-bb15-7d27-8931-bf23975296a2",
+			"headers": "//Content-Type: application/json\n//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDU4YWYyMWRmODlhZTE0NjllMjk4NCIsImlhdCI6MTY2NTUwMjk5MSwiZXhwIjoxNjY1NTg5MzkxfQ.3s9141W2Q6eqSLu90bqlI3V_83AGT8LmflzAw4KAB_w\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDU4YWYyMWRmODlhZTE0NjllMjk4NCIsImlhdCI6MTY2NTUwMjk5MSwiZXhwIjoxNjY1NTg5MzkxfQ.3s9141W2Q6eqSLu90bqlI3V_83AGT8LmflzAw4KAB_w",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "{{baseUrl}}/menus/topbar",
+			"folder": "fd99405f-c861-d7f5-a70c-b3c9b3ba9f53",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1665508581105,
+			"name": "Topbar",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"responses": [],
+			"rawModeData": "{\n    \"title\": \"آموزش  ساخت ربات با پایتون\",\n    \"href\": \"/course-info/ai-with-py\",\n    \"parent\": \"634599e2d4a59348b0c6e2b0\"\n}"
+		},
+		{
+			"id": "7c246394-d0e9-8ab0-cefd-1a88e90de6eb",
+			"name": "register",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"method": "POST",
+			"helperAttributes": {},
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"title\": \"{{$randomFullName}}\"\n}",
+			"pathVariables": {
+				"id": "63443b224a62cea9942aec51"
+			},
+			"url": "{{baseUrl}}/courses/:id/register",
+			"responses": [],
+			"pathVariableData": [
+				{
+					"key": "id",
+					"value": "63443b224a62cea9942aec51"
+				}
+			],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "2138de73-8016-2ff2-0063-729577c7175c",
+			"folder": "6b9acd8f-fd31-1296-811f-86052fdd8aa9"
+		},
+		{
+			"id": "7d4e8c2f-f342-ee2f-1159-221c1337534b",
+			"name": "Create Session",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"method": "POST",
+			"helperAttributes": {},
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"title\": \"{{$randomFullName}}\"\n}",
+			"pathVariables": {
+				"id": "63443b224a62cea9942aec51"
+			},
+			"url": "{{baseUrl}}/courses/:id/sessions",
+			"responses": [],
+			"pathVariableData": [
+				{
+					"key": "id",
+					"value": "63443b224a62cea9942aec51"
+				}
+			],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "2138de73-8016-2ff2-0063-729577c7175c",
+			"folder": "6b9acd8f-fd31-1296-811f-86052fdd8aa9"
+		},
+		{
+			"id": "7da605b0-1b3b-25a7-d4d8-e983a51d67ff",
+			"name": "Login",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"identifier\": \"Mollie.Strosin83\",\n    \"password\": \"123456\"\n}",
+			"tests": "if(pm.response.code == 200) {\n    pm.collectionVariables.set('accessToken', pm.response.json().accessToken)\n}",
+			"preRequestScript": "",
+			"url": "{{baseUrl}}/auth/login",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "2138de73-8016-2ff2-0063-729577c7175c",
+			"folder": "8620ae36-93b1-1214-15f6-9ca11ed5cc6c"
+		},
+		{
+			"id": "83118a2a-a1d6-ff3b-6f38-71d88953fa99",
+			"name": "Create",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"method": "POST",
+			"helperAttributes": {},
+			"headers": "",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "name",
+					"value": "{{$randomFullName}} Course",
+					"type": "text"
+				},
+				{
+					"key": "description",
+					"value": "{{$randomLoremSentences}}",
+					"type": "text"
+				},
+				{
+					"key": "cover",
+					"type": "file",
+					"src": "/home/mamad/Documents/MySocialMedia/ProfilePictureMySelf-min.jpg",
+					"value": ""
+				}
+			],
+			"rawModeData": "",
+			"url": "{{baseUrl}}/courses",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "2138de73-8016-2ff2-0063-729577c7175c",
+			"folder": "6b9acd8f-fd31-1296-811f-86052fdd8aa9"
+		},
+		{
+			"id": "8801fd5d-f106-7fdd-309f-faf18916240c",
+			"name": "All",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"method": "GET",
+			"helperAttributes": {},
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{baseUrl}}/courses",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "2138de73-8016-2ff2-0063-729577c7175c",
+			"folder": "6b9acd8f-fd31-1296-811f-86052fdd8aa9"
+		},
+		{
+			"id": "8be7816a-672a-b968-bbcf-50c2272e5f0c",
+			"name": "Me",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"method": "GET",
+			"helperAttributes": {},
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{baseUrl}}/auth/me",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "2138de73-8016-2ff2-0063-729577c7175c",
+			"folder": "8620ae36-93b1-1214-15f6-9ca11ed5cc6c"
+		},
+		{
+			"id": "b2f9f3e9-666e-8d30-5e67-abd6a5ed3652",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{baseUrl}}/courses/:shortName",
+			"folder": "6b9acd8f-fd31-1296-811f-86052fdd8aa9",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				"shortName": ""
+			},
+			"pathVariableData": [
+				{
+					"key": "shortName",
+					"value": ""
+				}
+			],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1665700823972,
+			"name": "one",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"responses": [],
+			"rawModeData": "{\n    \"courseID\": \"{{$randomCourseID}}\"\n}"
+		},
+		{
+			"id": "b93d9d10-9e05-53a1-b6b0-10b5f420550f",
+			"name": "All",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"method": "GET",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{baseUrl}}/menus",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "2138de73-8016-2ff2-0063-729577c7175c",
+			"folder": "fd99405f-c861-d7f5-a70c-b3c9b3ba9f53"
+		},
+		{
+			"id": "bde7a3a1-cdd8-6de4-4bc3-c7c69ee376bf",
+			"name": "Create",
+			"description": "",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"method": "POST",
+			"helperAttributes": {},
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"title\": \"زیر منوی اول منوی دوم\",\n    \"href\": \"/second/first\",\n    \"parent\": \"63445696bd0f8150900202e9\"\n}",
+			"url": "{{baseUrl}}/menus",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "2138de73-8016-2ff2-0063-729577c7175c",
+			"folder": "fd99405f-c861-d7f5-a70c-b3c9b3ba9f53"
+		},
+		{
+			"id": "fe75aa7f-91ca-4d12-0e1c-05e2b5a5930b",
+			"headers": "Authorization: user token\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "user token",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{baseUrl}}/articles/:shortName",
+			"queryParams": [],
+			"pathVariables": {
+				"shortName": ""
+			},
+			"pathVariableData": [
+				{
+					"key": "shortName",
+					"value": ""
+				}
+			],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2138de73-8016-2ff2-0063-729577c7175c",
+			"data": null,
+			"dataMode": "params",
+			"name": "one",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1665700800537,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "89b153e4-7fd4-78a9-782a-5477a4b0eccc"
+		}
+	]
+}
