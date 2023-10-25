@@ -23,7 +23,16 @@ export default function Register() {
 
   const registerNewUser = (event) => {
 
-    const [] = useForm({ } , false)
+    const [] = useForm({
+      username: {
+        value: '',
+        isValid: false,
+      },
+      password: {
+        value: '',
+        isValid: false,
+      }
+    } , false)
 
     event.preventDefault()
     console.log('User Register');
@@ -46,6 +55,13 @@ export default function Register() {
           </div>
           <form action="#" className="login-form">
             <div className="login-form__username">
+              <Input
+                type="text"
+                placeholder="نام و نام خانوادگی"
+                className="login-form__username-input"
+                element="input"
+                id="name"
+              />
               <Input
                 type="text"
                 placeholder="نام کاربری"
