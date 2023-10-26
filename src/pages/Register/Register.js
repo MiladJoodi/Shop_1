@@ -43,21 +43,25 @@ export default function Register() {
   const registerNewUser = (event) => {
     event.preventDefault();
 
-    const newUserInfo = {
-      name: formState.Inputs.name.value,
-      username: formState.Inputs.username.value,
-      email: formState.Inputs.email.value,
-      password: formState.Inputs.password.value,
-      confirmPassword: formState.Inputs.password.value,
+    const newUserInfos = {
+      name: formState.inputs.name.value,
+      username: formState.inputs.username.value,
+      email: formState.inputs.email.value,
+      password: formState.inputs.password.value,
+      confirmPassword: formState.inputs.password.value,
     };
 
-    fetch('http://localhost:4000/v1/auth/register', {
-      method: 'POST',
+    fetch(`http://localhost:4000/v1/auth/register`, {
+      method: "POST",
       headers: {
-        'Content-Type' : 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(newUserInfo)
-    }).then(res=> console.log(res))
+      body: JSON.stringify(newUserInfos),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(result.accessToken);
+      });
 
     console.log("User Register");
   };
