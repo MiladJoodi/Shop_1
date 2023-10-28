@@ -11,13 +11,21 @@ function App() {
 
   const router = useRoutes(routes);
 
-  const login = (token)=> {
+  const login = (userInfos, token)=> {
     setToken(token)
+    setIsLoggedIn(true)
+    setUserInfos(userInfos)
     // localStorage.setItem('user', {token: token}) 
     //داخل لوکال استوریج نمیشه آبجکت ذخیره کردن برای همین میذاریم داخل جی سون استرینگی فای
     // localStorage.setItem('user', JSON.stringify({token: token})) 
   // اینجوری مینویسیم
     localStorage.setItem('user', JSON.stringify({token})) 
+  }
+
+  const logout = ()=>{
+    setToken(null)
+    setUserInfos(null)
+    localStorage.removeItem('user')
   }
 
   return (
@@ -26,8 +34,8 @@ function App() {
         isLoggedIn: isLoggedIn,
         token: token,
         userInfos: userInfos,
-        login: () => {},
-        logout: () => {},
+        login,
+        logout
       }}
     >
       {router}
