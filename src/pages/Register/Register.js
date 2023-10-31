@@ -56,20 +56,34 @@ export default function Register() {
       confirmPassword: formState.inputs.password.value,
     };
 
-    fetch(`http://localhost:4000/v1/auth/register`, {
-      method: "POST",
+    fetch('http://localhost:4000/v1/auth/register',{
+      method: 'POST',
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(newUserInfos),
+      body: JSON.stringify(newUserInfos)
+    }).then(res=> res.json())
+    .then(result => {
+      console.log(result);
+      
     })
-      .then((res) => res.json())
-      .then((result) => {
-        console.log(result.accessToken);
-        authContext.login(result.user ,result.accessToken)
-      });
 
-    console.log("User Register");
+
+
+    // fetch(`http://localhost:4000/v1/auth/register`, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(newUserInfos),
+    // })
+    //   .then((res) => res.json())
+    //   .then((result) => {
+    //     console.log(result.accessToken);
+    //     authContext.login(result.user ,result.accessToken)
+    //   });
+
+    // console.log("User Register");
   };
 
   return (
