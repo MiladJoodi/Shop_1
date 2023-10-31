@@ -18,6 +18,7 @@ import "./Register.css";
 
 export default function Register() {
 
+  
   const authContext = useContext(AuthContext)
   console.log(authContext);
 
@@ -65,9 +66,9 @@ export default function Register() {
     }).then(res=> res.json())
     .then(result => {
       console.log(result);
-      
+      authContext.login(result.accessToken)
     })
-
+    console.log("User Register");
 
 
     // fetch(`http://localhost:4000/v1/auth/register`, {
