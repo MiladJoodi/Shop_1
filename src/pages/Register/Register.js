@@ -64,9 +64,9 @@ export default function Register() {
       },
       body: JSON.stringify(newUserInfos)
     }).then(res=> res.json())
-    .then(result => {
+    .then((result) => {
       console.log(result);
-      authContext.login(result.accessToken)
+      authContext.login(result.user , result.accessToken)
     })
     console.log("User Register");
 

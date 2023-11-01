@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useRoutes } from "react-router-dom";
 import routes from "./routes";
 import "./App.css";
@@ -11,22 +11,35 @@ function App() {
 
   const router = useRoutes(routes);
 
-  const login = (userInfos, token)=> {
-    setToken(token)
-    setIsLoggedIn(true)
-    setUserInfos(userInfos)
-    // localStorage.setItem('user', {token: token}) 
-    //داخل لوکال استوریج نمیشه آبجکت ذخیره کردن برای همین میذاریم داخل جی سون استرینگی فای
-    // localStorage.setItem('user', JSON.stringify({token: token})) 
-  // اینجوری مینویسیم
-    localStorage.setItem('user', JSON.stringify({token})) 
-  }
+  const login = useCallback((userInfos, token) => {
+    setToken(token);
+    setIsLoggedIn(true);
+    setUserInfos(userInfos);
 
-  const logout = ()=>{
-    setToken(null)
-    setUserInfos(null)
-    localStorage.removeItem('user')
-  }
+    localStorage.setItem("user", JSON.stringify({ token }));
+  }, [])
+
+  const logout = useCallback(()=>{
+      setToken(null);
+      setUserInfos(null);
+      localStorage.removeItem("user");
+  })
+
+  useEffect(()=>{
+    const localStorageData = JSON.parse(localStorage.getItem('user'));
+    if(localStorageData){
+      fetch('http://localhost:4000/v1/auth/me', {
+       method: 'GET',
+       headers: {
+          'Authorization' : `Bearer ${localStorageData.token}`
+       },
+      }).then((res)=> res.json())
+      .then(userData=>{
+        setIsLoggedIn(true)
+        setUserInfos(userData)
+      })
+    }
+  },[login])
 
   return (
     <AuthContext.Provider
@@ -35,7 +48,7 @@ function App() {
         token: token,
         userInfos: userInfos,
         login,
-        logout
+        logout,
       }}
     >
       {router}
